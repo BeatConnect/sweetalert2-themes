@@ -1,0 +1,44 @@
+@import 'sweetalert2/src/variables';
+
+$swal2-bc-theme-black: #0C0915;
+$swal2-bc-theme-white: #FFFFFF;
+
+$swal2-outline-color: lighten($swal2-outline-color, 10%);
+
+$swal2-background: rgba($swal2-bc-theme-white, .2);
+$swal2-html-container-color: $swal2-bc-theme-white;
+$swal2-title-color: $swal2-bc-theme-white;
+$swal2-backdrop: rgba($swal2-bc-theme-black, .85);
+
+// FOOTER
+$swal2-footer-border-color: #555;
+$swal2-footer-color: darken($swal2-html-container-color, 15%);
+
+// TIMER POGRESS BAR
+$swal2-timer-progress-bar-background: rgba($swal2-bc-theme-white, .6);
+
+// INPUT
+$swal2-input-color: $swal2-bc-theme-white;
+$swal2-input-background: lighten($swal2-bc-theme-black, 10%);
+
+// VALIDATION MESSAGE
+$swal2-validation-message-background: lighten($swal2-bc-theme-black, 10%);
+$swal2-validation-message-color: $swal2-bc-theme-white;
+
+// QUEUE
+$swal2-progress-step-background: lighten($swal2-bc-theme-black, 25%);
+
+// COMMON VARIABLES FOR CONFIRM AND CANCEL BUTTONS
+$swal2-button-focus-box-shadow: 0 0 0 1px $swal2-background, 0 0 0 3px $swal2-outline-color;
+
+// TOAST
+$swal2-toast-background: $swal2-bc-theme-black;
+$swal2-toast-button-focus-box-shadow: 0 0 0 1px $swal2-background, 0 0 0 3px $swal2-outline-color;
+
+@import 'sweetalert2/src/sweetalert2';
+
+// https://sweetalert2.github.io/recipe-gallery/blurred-backdrop.html
+body.swal2-shown > [aria-hidden="true"] {
+  transition: 0.1s filter;
+  filter: blur(12px);
+}
