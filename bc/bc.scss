@@ -104,6 +104,8 @@ $input-focus-box-shadow-color: rgba($link, 0.25);
 
 $input-radius: $radius;
 
+// 
+
 // TITLE
 $swal2-title-color: rgba(#ffffff, 0.8);
 $swal2-title-font-size: $size-5;
@@ -155,7 +157,10 @@ $swal2-close-button-gap: $modal-close-top;
 
 // HTML CONTAINER
 $swal2-html-container-font-size: $body-size;
+$swal2-html-container-margin: unset;
+
 $swal2-background: $background;
+
 // BOX MODEL
 $swal2-border-radius: $radius-large;
 $swal2-box-shadow: none;
